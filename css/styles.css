@@ -1,0 +1,226 @@
+:root {
+
+--VeryDarkMagenta: hsl(300, 43%, 22%);
+--SoftPink: hsl(333, 80%, 67%);
+--DarkGrayishMagenta: hsl(303, 10%, 53%);
+--LightGrayishMagenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+--fuente: 'League Spartan';
+}
+
+/*globales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: var(--fuente);
+    font-size: 15px;
+    text-align: center; 
+    background: url(../images/bg-pattern-top-mobile.svg) top left no-repeat,
+    url(../images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+}
+@media (min-width: 768px) {
+    body {    
+        background: url(../images/bg-pattern-top-desktop.svg) top left no-repeat,
+        url(../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    }
+}
+@media (min-width: 1280px) {
+    body {
+        height: 800px;
+    }
+}
+
+.contenido-principal {
+    width: 375px;
+}
+@media (min-width: 1280px) {
+    .contenido-principal {
+        width: 1150px;
+    }
+} 
+
+/*Cabecero*/
+
+@media (min-width: 1280px) {
+    .superior {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cabecero {
+        width: 50%;
+        text-align: left;
+        padding-top: 3rem;
+    }
+}
+
+h1 {
+    margin: 3rem 3.9rem 1.5rem 3.9rem;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 0.9;
+    color: var(--VeryDarkMagenta);   
+}
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 48px;
+        padding: 2.8rem 10rem 0 0;
+        margin-bottom: 1.9rem;
+        
+    }
+} 
+
+.parrafo {
+    font-weight: bold;
+    color: var(--DarkGrayishMagenta);
+    margin: 0 3.9rem 3rem 3.9rem;
+}
+@media (min-width: 1280px) {
+    .parrafo {
+        font-size: 17px;
+        font-weight: 500;
+        padding-right: 9rem;
+        line-height: 1.5;
+    }
+} 
+
+/*Puntuaciones*/
+
+@media (min-width: 1280px) {
+    .contenedor-puntuaciones {
+        padding-top: 11.5rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.puntuacion {
+    background-color: var(--LightGrayishMagenta);
+    margin: 0 3.9rem 1rem 3.9rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.8rem;
+    color: var(--VeryDarkMagenta);
+    font-weight: bold;
+} 
+@media (min-width: 1280px) {
+    .puntuacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39rem;
+        padding: 1.5rem 0 1.5rem 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .puntuacion1 {
+        margin-right: 15rem;
+    }
+    .puntuacion2 {
+    margin-right: 9rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contenedor-estrellas {
+        margin-right: 2.5rem;
+    }
+    .estrella {
+        padding-left: 0.5rem;
+    }
+}
+
+/*Testimonios*/
+
+@media (min-width: 1280px) {
+    .contenedor-testimonios {
+        display: flex;
+        margin: 0 3.9rem 0 3.9rem;
+        height: 270px;
+    }
+}
+
+article {
+    margin: 0 3.9rem 0 3.9rem;
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 0.8rem;
+}
+
+@media (min-width: 1280px) {
+    article {
+        width: 34rem;
+        height: 22rem;
+        margin: 0;
+    }  
+    .articulo1 {
+        margin-right: 2.3rem;
+    }
+    .articulo2 {
+        margin: 1.8rem 2.3rem 0 0;
+    }  
+    .articulo3 {
+        margin-top: 3.3rem;
+    }
+}
+
+.cabecero-testimonios {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 2.5rem;
+}
+@media (min-width: 1280px) {
+    .cabecero-testimonios {
+        padding: 2rem 0 0 3rem;
+    }
+}
+
+.img-testimonio {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.info {
+    padding-left: 1.5rem;
+}
+
+.nombre {
+    color: var(--White);
+    margin-bottom: 0;
+}
+.verificado {
+    color: var(--SoftPink);
+    margin-top: 0;
+}
+
+.testimonio {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: left;
+    color: var(--LightGrayishMagenta);
+    padding: 0 3.5rem 3rem 2.5rem;
+} 
+
+/*atribuciones*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
